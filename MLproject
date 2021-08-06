@@ -1,0 +1,9 @@
+name: mlflow_tutorial
+conda_env: conda.yaml
+entry_points:
+    main:
+        parameters:
+            n_estimators: float
+            max_depth: float
+            max_features: float
+        command: "python main.py {n_estimators} {max_depth} {max_features}"
